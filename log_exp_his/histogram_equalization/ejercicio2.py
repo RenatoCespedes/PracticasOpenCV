@@ -37,7 +37,7 @@ def run(folder):
             
             #nueva imagen
             out=np.zeros(shape=img.shape,dtype=np.uint8)
-
+            # print(len(img[0][0]))
             #aplicamos contrast stretching con los topes en los 3 canales
             for i in range(len(img[0][0])):
                 for j in range(img.shape[0]):
