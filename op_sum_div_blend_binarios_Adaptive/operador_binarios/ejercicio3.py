@@ -47,7 +47,7 @@ def op_binario(imname1,imname2,operacion):
                     out[j][k][i]=op_xor((img2[j][k][i]),(img[j][k][i]))
 
         show_img=hconcat_resize_min([img,img2,out]) 
-        cv2.imshow('Operacion Binaria XOR',out)
+        cv2.imshow('Operacion Binaria XOR',show_img)
         cv2.waitKey()
         return(out)
     else:
